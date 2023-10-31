@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="YWoe2gQAVGr_-i2fXfnttxP5WkhC0VrrQzzlE0gF1rI" />
+    <title>
+        Portfolio | BLACKBIRD
+    </title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="shortcut icon" type="image/png" href="img/BLACKBIRD.gif" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<body>     
+    <div class="cursor"></div>
+    <nav id="#top" class="nav-black">
+        <input type="checkbox" role="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu" aria-pressed="true">
+        <ul id="menu">
+            <li class="btn">
+                <a href="#top">
+                    Home
+                </a>
+            </li>
+            <li class="btn">
+                <a href="#img">
+                    Images
+                </a>
+            </li>
+            <li class="btn">
+                <a href="#projects">
+                    Projets
+                </a>
+            </li>
+            <li class="btn">
+                <a href="#social">
+                    Social
+                </a>
+            </li>
+        </ul>
+        </nav>
+
+        <section class="section-welcome">
+            <div class="container-title-img">
+                <div class="container-welcome">
+                    <div class="container-welcome-1200px">
+                        <h1 class="title-welcome">I'm a <span class="switch-police-title-welcome">musician</span></h1>
+                        <div class="container-img-welcome1200px">
+                            <img src="img/img-music.png" alt="" class="img-welcome1200px">
+                        </div>
+                    </div>
+                    <p class="p-welcome">Bienvenue sur mon portfolio dédié à ma vie d'artiste musicien. Je suis ravi de vous accueillir ici, où je partage avec passion mon parcours, mes créations musicales et tout ce qui m'inspire.
+                        À travers ce portfolio, je souhaite vous inviter à découvrir mon univers musical et à vous plonger dans mes compositions.
+                        Ce portfolio est aussi l'occasion pour moi de vous tenir informé de mes actualités, de mes futurs projets et des événements auxquels je participerai. J'espère qu'il vous permettra de mieux me connaître en tant qu'artiste et de partager avec moi cette belle aventure musicale.
+                        N'hésitez pas à explorer les différentes sections de mon portfolio et à me contacter si vous avez des questions, des commentaires ou si vous souhaitez collaborer sur un projet musical.<br><br>
+                        Bien musicalement,</p>
+                </div>
+                <div class="container-img-welcome">
+                    <img src="img/img-music.png" alt="" class="img-welcome">
+                </div>
+                <p class="p-welcome1200px">Bienvenue sur mon portfolio dédié à ma vie d'artiste musicien. Je suis ravi de vous accueillir ici, où je partage avec passion mon parcours, mes créations musicales et tout ce qui m'inspire.
+                    À travers ce portfolio, je souhaite vous inviter à découvrir mon univers musical et à vous plonger dans mes compositions.
+                    Ce portfolio est aussi l'occasion pour moi de vous tenir informé de mes actualités, de mes futurs projets et des événements auxquels je participerai. J'espère qu'il vous permettra de mieux me connaître en tant qu'artiste et de partager avec moi cette belle aventure musicale.
+                    N'hésitez pas à explorer les différentes sections de mon portfolio et à me contacter si vous avez des questions, des commentaires ou si vous souhaitez collaborer sur un projet musical.<br><br>
+                    Bien musicalement,</p>
+            </div>
+        </section>
+
+        <section id="img" class="section-about">
+            <div class="eyes">
+                <div class="eye">
+                    <div class="ball"></div>
+                </div>
+        
+                <div class="eye">
+                    <div class="ball"></div>
+                </div>
+            </div>
+            <script>
+                let balls = document.getElementsByClassName("ball");
+
+                document.onmousemove = function () {
+
+                    let x = event.clientX * 100 / window.innerWidth + "%";
+                    let y = event.clientY * 100 / window.innerHeight + "%";
+
+
+                    for (let i = 0; i < 2; i++) {
+                        balls[i].style.left = x;
+                        balls[i].style.top = y;
+                        balls[i].style.transform = "translate(-" + x + ",-" + y + ")";
+                    }
+
+                    console.log("x =" + x);
+                    console.log("y = " + y);
+                }
+            </script>
+            <div class="container-div-img-about">
+                <div class="container-img-about">
+                    <img class="img-about" src="img/background.jpg" alt="">
+                </div>
+                <div class="container-img-about">
+                    <img class="img-about" src="img/music2.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h1 class="mes-projets">Mes projets :</h1>
+            <div class="container-div-projet">
+                <a href="#projects" style="text-decoration: none;">
+                <div class="projet">
+                    <img src="img/pochette-album.jpg" alt="" class="img-projet">
+                    <div class="description-projet">
+                        <h1 class="title-projet">Nouvel Album</h1>
+                        <p class="p-projet">Grande nouvelle ! Je suis ravi de vous annoncer la sortie de mon tout nouvel album. Après des mois de création et d'efforts passionnés, cet album représente une nouvelle étape de mon parcours artistique. Plongez-vous dans les sonorités uniques, les paroles profondes et les émotions sincères qui animent chaque chanson. J'ai hâte de partager cette nouvelle création musicale avec vous et d'entamer ce chapitre excitant de ma carrière d'artiste. Restez à l'écoute pour plus de détails et préparez-vous à vous immerger dans un univers musical captivant.</p>
+                        <a href="" class="link-projet"><button class="button-projet">En savoir plus</button></a>
+                    </div>
+                </div>
+                </a>
+                <a href="#projects" style="text-decoration: none;">
+                <div class="projet">
+                    <img src="img/concert.jpg" alt="" class="img-projet">
+                    <div class="description-projet">
+                    <h1 class="title-projet">En tournée</h1>
+                    <p class="p-projet">C'est avec une joie immense que je vous annonce le lancement de ma toute nouvelle tournée ! Cette série de concerts représente une étape décisive dans mon parcours artistique. Je suis extrêmement enthousiaste à l'idée d'entamer ce chapitre exaltant de ma carrière d'artiste. Restez à l'affût pour plus de détails.</p>
+                    <a href="" class="link-projet"><button class="button-projet">En savoir plus</button></a>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </section>
+        <section class="social" id="social">
+            <ul id="services">
+              <h2>Fancy Colorlib Social</h2>
+              <li>
+                <div class="facebook">
+                  <a href="https://facebook.com/" target="_blank">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                </div>
+                <span>Facebook</span>
+              </li>
+              <li>
+                <div class="twitter">
+                  <a href="https://twitter.com/" target="_blank">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                </div>
+                <span>Twitter</span>
+              </li>
+              <li>
+                <div class="youtube">
+                  <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                  </a>
+                </div>
+                <span>YouTube</span>
+              </li>
+              <li>
+                <div class="linkedin">
+                  <a href="https://www.linkedin.com/" target="_blank">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                </div>
+                <span>LinkedIn</span>
+              </li>
+              <li>
+                <div class="instagram">
+                  <a href="https://www.linkedin.com/" target="_blank">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </div>
+                <span>Instagram</span>
+              </li>
+              <li>
+                <div class="github">
+                  <a href="https://github.com/" target="_blank">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                  </a>
+                </div>
+                <span>Github</span>
+              </li>
+            </ul>
+          </section>
+<hr class="hr-footer">
+<div class="article-footer">
+    <div class="container-footer-text-small-text-center-index">
+        <div class="row-content">
+            <div class="text-center mobile-padding">
+                <div class=".container-footer">
+                    <p class="p-adresse">| 6 rue Adolphe Yvon, 75016, Paris, France |</p>
+                </div>
+                <p class="p-copyright">Copyright © 2022-2023 dev by <a href="https://www.selerium.fr/" style="color: #e35339" onclick="window.open(this.href);return false">BlackBird</a>, All Right Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        $(window).scroll(function(){
+            if($(window).scrollTop()){
+                $("nav").addClass("black");
+            }
+            else{
+                $("nav").removeClass("black");
+            }
+            if($(window).scrollTop()){
+                $("span").addClass("petit");
+            }
+            else{
+                $("span").removeClass("petit");
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
